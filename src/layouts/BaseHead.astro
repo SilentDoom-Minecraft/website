@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from '../consts';
 ---
 
 <head>
@@ -11,6 +11,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{SITE_TITLE}</title>
+
+    <meta property="og:title" content={SITE_TITLE} />
+    <meta property="og:description" content={SITE_DESCRIPTION} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={SITE_URL} />
 
     <link rel="sitemap" href="/sitemap-index.xml" />
     <link
