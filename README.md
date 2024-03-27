@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="https://imgur.com/941rH0o.png" width="75"><br/><br/>
+    <img src="https://imgur.com/kkMQDbv.png" width="75"><br/><br/>
     <img src="https://img.shields.io/badge/astro-%232C2052.svg?style=for-the-badge&logo=astro&logoColor=white" alt="Astro" />
     <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind" />
 </p>
