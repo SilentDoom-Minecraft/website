@@ -2,11 +2,18 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BaseHead from './BaseHead.astro';
+
+interface Props {
+    title?: string;
+    description?: string;
+}
+
+const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en">
-    <BaseHead />
+<html lang="en" dir="ltr">
+    <BaseHead title={title || ''} description={description || ''} />
     <body class="bg-indigo-50">
         <div class="flex flex-col justify-between min-h-[100vh]">
             <Header />

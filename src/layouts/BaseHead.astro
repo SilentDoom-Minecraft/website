@@ -2,18 +2,28 @@
 import '../styles/global.css';
 
 import { SITE_TITLE, SITE_DESCRIPTION, SITE_URL } from '../consts';
+
+interface Props {
+    title: string;
+    description: string;
+}
+
+const { title, description } = Astro.props;
 ---
 
 <head>
     <meta charset="UTF-8" />
-    <meta name="description" content={SITE_DESCRIPTION} />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <title>{SITE_TITLE}</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <meta property="og:title" content={SITE_TITLE} />
-    <meta property="og:description" content={SITE_DESCRIPTION} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <title>{`${title ? `${title} | ` : ''} ${SITE_TITLE}`}</title>
+    <meta name="description" content={description || SITE_DESCRIPTION} />
+
+    <meta property="og:title" content={`${title ? `${title} | ` : ''} ${SITE_TITLE}`} />
+    <meta property="og:description" content={description || SITE_DESCRIPTION} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={SITE_URL} />
 
