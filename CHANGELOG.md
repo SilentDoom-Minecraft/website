@@ -1,3 +1,7 @@
+# 1.0.0 / 2024-05-08
+
+-   Remove unused css styles
+
 # 1.0.1 / 2024-03-26
 
 -   Improved meta tags
