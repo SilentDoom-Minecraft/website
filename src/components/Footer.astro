@@ -4,8 +4,8 @@ import { SITE_TITLE } from '../consts';
 import FooterLink from './FooterLink.astro';
 ---
 
-<footer class="w-full text-center text-gray-600">
-    <div class="container px-5 py-20 mx-auto">
+<footer class="w-full text-center text-gray-600 bg-gray-100">
+    <div class="container px-5 pt-12 mx-auto">
         <div class="flex flex-wrap md:text-left text-center order-first">
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
                 <h2
@@ -13,7 +13,7 @@ import FooterLink from './FooterLink.astro';
                 >
                     DATAPACKS
                 </h2>
-                <nav class="list-none mb-10">
+                <nav class="list-none mb-12">
                     <FooterLink
                         text="Villagers Drop Emeralds on Death"
                         link="https://www.curseforge.com/minecraft/texture-packs/villagers-drop-emeralds-on-death-datapack"
@@ -42,7 +42,7 @@ import FooterLink from './FooterLink.astro';
                 >
                     MODS
                 </h2>
-                <nav class="list-none mb-10">
+                <nav class="list-none mb-12">
                     <FooterLink
                         text="Easy Commands"
                         link="https://www.curseforge.com/minecraft/mc-mods/easy-commands-forge-fabric"
@@ -59,7 +59,7 @@ import FooterLink from './FooterLink.astro';
                 >
                     MODPACKS
                 </h2>
-                <nav class="list-none mb-10">
+                <nav class="list-none mb-12">
                     <FooterLink
                         text="Mocha Latte"
                         link="https://www.curseforge.com/minecraft/modpacks/mocha-latte"
@@ -72,18 +72,18 @@ import FooterLink from './FooterLink.astro';
                 >
                     ABOUT ME
                 </h2>
-                <p class="text-gray-600 text-sm mt-2 md:text-left text-center">
+                <p class="text-gray-600 text-sm mt-2 md:text-left text-center mb-12">
                     I've been played Minecraft since Beta, and playing modded since
                     1.7.10. I love creating things and so I decided to dabble into making
-                    datapacks, mods and modpacks. Thanks for stopping checking out my
-                    creations!
+                    datapacks, mods and modpacks. Thanks for stopping by and checking out
+                    my creations!
                 </p>
             </div>
         </div>
     </div>
-    <div class="bg-gray-100">
+    <div class="bg-gray-700">
         <div class="container px-5 py-5 mx-auto flex items-center sm:flex-row flex-col">
-            <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+            <p class="text-sm font-medium text-gray-300 sm:ml-6 sm:mt-0 mt-4">
                 &copy; {new Date().getFullYear()}
                 {SITE_TITLE}.
             </p>
@@ -98,7 +98,7 @@ import FooterLink from './FooterLink.astro';
                 >
                     <Icon
                         name="simple-icons:curseforge"
-                        class="w-5 h-5 transition text-gray-500 hover:text-gray-800"
+                        class="w-5 h-5 transition text-gray-100 hover:text-gray-300"
                     />
                 </a>
                 <a
@@ -109,7 +109,7 @@ import FooterLink from './FooterLink.astro';
                 >
                     <Icon
                         name="simple-icons:modrinth"
-                        class="w-5 h-5 transition text-gray-500 hover:text-gray-800"
+                        class="w-5 h-5 transition text-gray-100 hover:text-gray-300"
                     />
                 </a>
                 <a
@@ -120,7 +120,7 @@ import FooterLink from './FooterLink.astro';
                 >
                     <Icon
                         name="simple-icons:github"
-                        class="w-5 h-5 transition text-gray-500 hover:text-gray-800"
+                        class="w-5 h-5 transition text-gray-100 hover:text-gray-300"
                     />
                 </a>
             </span>
