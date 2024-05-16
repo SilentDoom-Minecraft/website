@@ -1,7 +1,129 @@
 ---
+import { Icon } from 'astro-icon/components';
 import { SITE_TITLE } from '../consts';
+import FooterLink from './FooterLink.astro';
 ---
 
-<footer class="w-full bg-indigo-600 pb-14 pt-8 text-center text-indigo-50">
-    <p>&copy; {new Date().getFullYear()} {SITE_TITLE}. All rights reserved.</p>
+<footer class="w-full text-center text-gray-600">
+    <div class="container px-5 py-20 mx-auto">
+        <div class="flex flex-wrap md:text-left text-center order-first">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2
+                    class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-5"
+                >
+                    DATAPACKS
+                </h2>
+                <nav class="list-none mb-10">
+                    <FooterLink
+                        text="Villagers Drop Emeralds on Death"
+                        link="https://www.curseforge.com/minecraft/texture-packs/villagers-drop-emeralds-on-death-datapack"
+                    />
+                    <FooterLink
+                        text="Disable Recipes"
+                        link="https://www.curseforge.com/minecraft/texture-packs/disable-recipes-datapack"
+                    />
+                    <FooterLink
+                        text="Grant All Recipes"
+                        link="https://www.curseforge.com/minecraft/texture-packs/grant-all-recipes-datapack"
+                    />
+                    <FooterLink
+                        text="Disable Advancements"
+                        link="https://www.curseforge.com/minecraft/texture-packs/disable-advancements-datapack"
+                    />
+                    <FooterLink
+                        text="Shortcut Recipes"
+                        link="https://www.curseforge.com/minecraft/texture-packs/shortcut-recipes-datapack"
+                    />
+                </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2
+                    class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-5"
+                >
+                    MODS
+                </h2>
+                <nav class="list-none mb-10">
+                    <FooterLink
+                        text="Easy Commands"
+                        link="https://www.curseforge.com/minecraft/mc-mods/easy-commands-forge-fabric"
+                    />
+                    <FooterLink
+                        text="Shortcut Recipes"
+                        link="https://www.curseforge.com/minecraft/mc-mods/shortcut-recipes-forge-fabric"
+                    />
+                </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2
+                    class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-5"
+                >
+                    MODPACKS
+                </h2>
+                <nav class="list-none mb-10">
+                    <FooterLink
+                        text="Mocha Latte"
+                        link="https://www.curseforge.com/minecraft/modpacks/mocha-latte"
+                    />
+                </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+                <h2
+                    class="title-font font-semibold text-gray-900 tracking-widest text-sm mb-5"
+                >
+                    ABOUT ME
+                </h2>
+                <p class="text-gray-600 text-sm mt-2 md:text-left text-center">
+                    I've been played Minecraft since Beta, and playing modded since
+                    1.7.10. I love creating things and so I decided to dabble into making
+                    datapacks, mods and modpacks. Thanks for stopping checking out my
+                    creations!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="bg-gray-100">
+        <div class="container px-5 py-5 mx-auto flex items-center sm:flex-row flex-col">
+            <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">
+                &copy; {new Date().getFullYear()}
+                {SITE_TITLE}.
+            </p>
+            <span
+                class="inline-flex space-x-4 sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+            >
+                <a
+                    href="https://www.curseforge.com/members/silentdoom/projects"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View my projects on CurseForge"
+                >
+                    <Icon
+                        name="simple-icons:curseforge"
+                        class="w-5 h-5 transition text-gray-500 hover:text-gray-800"
+                    />
+                </a>
+                <a
+                    href="https://modrinth.com/user/SilentDoom"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View my projects on Modrinth"
+                >
+                    <Icon
+                        name="simple-icons:modrinth"
+                        class="w-5 h-5 transition text-gray-500 hover:text-gray-800"
+                    />
+                </a>
+                <a
+                    href="https://github.com/SilentDoom-Minecraft"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="View my projects on Github"
+                >
+                    <Icon
+                        name="simple-icons:github"
+                        class="w-5 h-5 transition text-gray-500 hover:text-gray-800"
+                    />
+                </a>
+            </span>
+        </div>
+    </div>
 </footer>
