@@ -1,0 +1,76 @@
+---
+import Project from './Project.astro';
+import { projects } from './projects';
+
+const { datapacks, mods, modpacks } = projects;
+---
+
+<section class="text-gray-600 body-font">
+    <div class="container px-5 mt-16 mx-auto">
+        <div class="mb-28">
+            <div class="flex flex-col">
+                <div class="h-1 bg-gray-200 rounded overflow-hidden">
+                    <div class="w-24 h-full bg-yellow-500"></div>
+                </div>
+                <div class="flex flex-wrap sm:flex-row flex-col py-4 mb-6">
+                    <h1
+                        class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl sm:mb-0 flex items-center"
+                    >
+                        <span
+                            class="bg-gray-100 text-gray-800 text-xs font-semibold me-2 mr-3.5 px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
+                            >{datapacks.length}</span
+                        >
+                        Minecraft Datapacks
+                    </h1>
+                </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                {datapacks.map((projects) => <Project {...projects} />)}
+            </div>
+        </div>
+        <div class="mb-28">
+            <div class="flex flex-col">
+                <div class="h-1 bg-gray-200 rounded overflow-hidden">
+                    <div class="w-24 h-full bg-yellow-500"></div>
+                </div>
+                <div class="flex flex-wrap sm:flex-row flex-col py-4 mb-6">
+                    <h1
+                        class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl sm:mb-0 flex items-center"
+                    >
+                        <span
+                            class="bg-gray-100 text-gray-800 text-xs font-semibold me-2 mr-3.5 px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
+                            >{mods.length}</span
+                        >
+                        Minecraft Mods
+                    </h1>
+                </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                {mods.map((projects) => <Project {...projects} />)}
+            </div>
+        </div>
+        <div class="mb-28">
+            <div class="flex flex-col">
+                <div class="h-1 bg-gray-200 rounded overflow-hidden">
+                    <div class="w-24 h-full bg-yellow-500"></div>
+                </div>
+                <div class="flex flex-wrap sm:flex-row flex-col py-4 mb-6">
+                    <h1
+                        class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl sm:mb-0 flex items-center"
+                    >
+                        <span
+                            class="bg-gray-100 text-gray-800 text-xs font-semibold me-2 mr-3.5 px-2 py-0.5 rounded dark:bg-gray-700 dark:text-gray-300"
+                            >{modpacks.length}</span
+                        >
+                        Minecraft Modpacks
+                    </h1>
+                </div>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                {modpacks.map((projects) => <Project {...projects} />)}
+            </div>
+        </div>
+    </div>
+</section>
+
+GitHub
