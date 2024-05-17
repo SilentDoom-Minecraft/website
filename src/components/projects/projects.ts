@@ -11,13 +11,13 @@ export const projects = {
             modrinth: 'https://modrinth.com/datapack/villagers-drop-emerald-on-death',
         },
         {
-            title: 'Disable Advancements',
-            description: 'Minecraft datapack which disables all vanilla advancements.',
-            image: 'disable-advancements.webp',
+            title: 'Disable Recipes',
+            description: 'Minecraft datapack which disables all vanilla recipes.',
+            image: 'disable-recipes.webp',
             tags: [''],
             curseforge:
-                'https://www.curseforge.com/minecraft/texture-packs/disable-advancements-datapack',
-            modrinth: 'https://modrinth.com/datapack/disable-advancements',
+                'https://www.curseforge.com/minecraft/texture-packs/disable-recipes-datapack',
+            modrinth: 'https://modrinth.com/datapack/disable-recipes',
         },
         {
             title: 'Grant All Recipes',

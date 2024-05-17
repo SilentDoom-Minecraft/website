@@ -1,17 +1,21 @@
 ---
+import { Icon } from 'astro-icon/components';
+
 interface Props {
     title: string;
     href: string;
+    icon: string;
 }
 
-const { href, title } = Astro.props;
+const { href, title, icon } = Astro.props;
 ---
 
 <a
-    class="flex items-center justify-center space-x-3 px-3.5 py-2.5 bg-amber-50 rounded-lg transition fill-amber-950 hover:bg-amber-100 w-full sm:w-fit max-w-[225px]"
+    class="flex items-center justify-center space-x-2.5 px-3.5 py-2.5 text-amber-50 bg-amber-500 rounded-lg transition fill-amber-50 hover:bg-amber-600 w-full sm:w-fit max-w-[225px]"
     href={href}
     target="_blank"
+    rel="noopener noreferrer"
 >
-    <slot />
-    <h4 class="uppercase text-base font-semibold text-amber-950">{title}</h4>
+    <Icon name=`simple-icons:${icon}` class="w-4 h-4" />
+    <h4 class="uppercase text-sm font-semibold text-amber-50">{title}</h4>
 </a>
