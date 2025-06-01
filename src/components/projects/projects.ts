@@ -53,7 +53,7 @@ export const projects = {
             title: 'Easy Commands',
             description: 'A set of easy-to-use command aliases.',
             image: 'easy-commands.webp',
-            tags: ['Forge', 'Fabric'],
+            tags: ['Forge', 'Fabric', 'NeoForge'],
             curseforge:
                 'https://www.curseforge.com/minecraft/mc-mods/easy-commands-forge-fabric',
             modrinth: 'https://modrinth.com/mod/easy-commands',
