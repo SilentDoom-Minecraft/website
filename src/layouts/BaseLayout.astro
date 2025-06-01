@@ -2,6 +2,7 @@
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import BaseHead from './BaseHead.astro';
+import Alert from '../components/Alert.astro';
 
 interface Props {
     title?: string;
@@ -15,6 +16,15 @@ const { title, description } = Astro.props;
 <html lang="en" dir="ltr">
     <BaseHead title={title || ''} description={description || ''} />
     <body>
+        <Alert>
+            <span>Help support by</span>
+            <a
+                href="https://buymeacoffee.com/silentdoom"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-block underline">Buying me a coffee!</a
+            >
+        </Alert>
         <div class="flex flex-col justify-between min-h-[100vh]">
             <Header />
             <slot />
