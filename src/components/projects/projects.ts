@@ -1,6 +1,22 @@
 export const projects = {
     datapacks: [
         {
+            title: 'Disable Village Loot',
+            description: 'Disables all loot from chests in villages.',
+            image: 'disable-village-loot-icon.webp',
+            tags: [''],
+            curseforge: '',
+            modrinth: 'https://modrinth.com/datapack/disable-village-loot',
+        },
+        {
+            title: 'Disable Fishing Loot',
+            description: 'Disables all fishing loot by removing all drop tables.',
+            image: 'disable-fishing-loot-icon.webp',
+            tags: [''],
+            curseforge: '',
+            modrinth: 'https://modrinth.com/datapack/disable-fishing-loot/',
+        },
+        {
             title: 'Villagers Drop Emeralds on Death',
             description:
                 'Villagers and wandering traders drop a single emerald on death.',
