@@ -15,15 +15,15 @@ const { title, description, image, tags, curseforge, modrinth } = Astro.props;
 ---
 
 <div class="w-[300px] p-4">
-    <div class="bg-gray-100 rounded-lg">
+    <div class="bg-gray-100 rounded-lg h-full flex flex-col">
         <Image
             class="rounded w-full object-cover object-center"
-            src=`/logos/${image}`
+            src={`/logos/${image}`}
             alt="Project logo"
             width="300"
             height="300"
         />
-        <div class="py-4 px-6">
+        <div class="py-4 px-6 flex flex-col flex-1">
             {
                 !!tags.every((tag) => tag !== '') && (
                     <div class="flex items-center space-x-2 mb-4">
@@ -42,20 +42,17 @@ const { title, description, image, tags, curseforge, modrinth } = Astro.props;
             <p class="leading-relaxed text-sm mb-4">
                 {description}
             </p>
-            <div class="flex items-center flex-wrap gap-3 mt-4">
+            <div class="flex-1"></div>
+            <div class="flex items-center justify-end flex-wrap gap-3 mt-5">
                 {
                     !!curseforge && (
                         <a
                             href={curseforge}
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="px-3 py-2 text-sm font-medium text-center inline-flex items-center text-white rounded-lg bg-[#F16436] hover:bg-[#cf3e0e]"
+                            class="p-2.5 text-lg font-medium text-center inline-flex items-center text-white rounded bg-[#F16436] hover:bg-[#cf3e0e]"
                         >
-                            <Icon
-                                name="simple-icons:curseforge"
-                                class="w-3.5 h-3.5 text-white me-2"
-                            />
-                            Curseforge
+                            <Icon name="simple-icons:curseforge" class="text-white" />
                         </a>
                     )
                 }
@@ -65,13 +62,9 @@ const { title, description, image, tags, curseforge, modrinth } = Astro.props;
                             href={modrinth}
                             target="_blank"
                             rel="noopener noreferrer"
-                            class="px-3 py-2 text-sm font-medium text-center inline-flex items-center text-white rounded-lg bg-[#00AF5C] hover:bg-[#008345]"
+                            class="p-2.5 text-lg font-medium text-center inline-flex items-center text-white rounded bg-[#00AF5C] hover:bg-[#008345]"
                         >
-                            <Icon
-                                name="simple-icons:modrinth"
-                                class="w-3.5 h-3.5 text-white me-2"
-                            />
-                            Modrinth
+                            <Icon name="simple-icons:modrinth" class="text-white" />
                         </a>
                     )
                 }

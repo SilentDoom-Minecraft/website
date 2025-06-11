@@ -3,7 +3,7 @@ export const projects = {
         {
             title: 'Villagers Drop Emeralds on Death',
             description:
-                'Villagers and wandering traders drop a single emerald on death. Inspired by the mod of the same name, but as a minecraft datapack.',
+                'Villagers and wandering traders drop a single emerald on death.',
             image: 'villagers-drop-emeralds.webp',
             tags: [''],
             curseforge:
